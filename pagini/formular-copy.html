@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>CODIFUN</title>
+<link rel="stylesheet" type="text/css" href="../css/style_11.css">
+</head>
+<body> 
+<header>
+<h1>Codifun inspire me!</h1>
+<p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</i></p>
+</header>
+                <nav>
+                        <a href="../index_12.html">Acasa</a>
+                        <a href="curiozitati-copy.html">Curiozitati</a>
+                        <a href="adresa.html">Adresa</a>
+                        <a href="https://www.facebook.com/jenea.ceban">Profil Facebook</a>
+                        <a href="formular-copy.html" target="_blank">Completeaza formular</a>
+                </nav>  
+        <div align="center">
+            <h2>Formular cu date personale &#x2663</h2>
+                <canvas id="myCanvas" width="300px" height="80px" style="border:2px solid #a7a3a3;">
+                        Browserul nu suporta canvas.
+                </canvas>
+                    <script>
+                    var canvas = document.getElementById("myCanvas");
+                    var ctx = canvas.getContext("2d");
+                    ctx.font = "25px Arial"; 
+                    ctx.fillText("Hello World",75,45);
+                    </script>
+        </div>
+            <h4 style="display:inline">Click pentru a reveni</h4>
+                <a href="../index_12.html">
+                    <svg width="50px" height="50px">
+                        <circle cx="25px" cy="25px" r="20px" fill="yellow" stroke="green" stroke-width="4px"/>
+                    </svg>
+                </a>
+<section >
+        <form action="example.com" method="POST" class="form">
+            Nume:<br><input type="text" name="name"><br><br>
+            Prenume:<br><input type="text" name="surname"><br><br>
+            Data nasterii:<input type="date" name="date"><br><br>
+            Tara de origine:<select>
+                                    <option value="1">Moldova</option>
+                                    <option value="2">Rusia</option>
+                                    <option value="3">Romania</option>
+                                </select><br><br>
+            Preferinte:<br>
+                        <label class="container">
+                                    <input type="checkbox">HTML
+                                    <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                                    <input type="checkbox" checked="checked">Javascript
+                                    <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                                    <input type="checkbox">PHP
+                                    <span class="checkmark"></span>
+                        </label>
+                        <label class="container">
+                                    <input type="checkbox">CSS
+                                    <span class="checkmark"></span>
+                        </label><br><br>
+                        <!---------------------------------------------------
+                        <input type="checkbox" name="programing_language" value="html">HTML<br>
+                        <input type="checkbox" name="programing_language" value="javascript">Javascript<br>
+                        <input type="checkbox" name="programing_language" value="php">PHP<br>
+                        <input type="checkbox" name="programing_language" value="css">CSS  
+                        ---------------------------------------------------->                                                  
+                Email:<input type="email" name="email"><br><br>
+                Password:<input type="password" name="password"><br><br>
+                Cat de des doriti sa primiti notificari pe adresa de email?<br>
+                                    <input type="radio" name="Saptaminal">Saptaminal<br>
+                                    <input type="radio" name="Saptaminal">Lunar<br>
+                                    <input type="radio" name="Saptaminal">Niciodata<br><br>
+                Parerea Dumnevoastra despre Codifun:<br><br>
+                                    <textarea rows="8" cols="50"></textarea><br><br>
+                <input type="submit" name="submit" value="Trimite">
+        </form>
+</section>
+<footer>
+        <h4 id="demo" align="center"></h4>
+            <script>
+                document.getElementById("demo").innerHTML="Knowledge creates your future!"
+            </script>
+</footer>
+</body>
+</html>

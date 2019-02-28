@@ -1,0 +1,36 @@
+body {
+    background-color:#f9f3f3;
+}
+
+.article-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu .nav-item {
+    border: 1px solid #dedede;
+    padding: 5px;
+    text-align: center;
+}
+
+#nav-menu .nav-item a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+}
+
+#nav-menu .nav-item:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+

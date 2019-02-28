@@ -1,0 +1,53 @@
+.content {
+    display: block;
+    position: relative;
+    border-style: solid;
+    margin: auto 80px 50px 80px;
+    padding: 20px;
+}
+
+.text {
+    color: rgb(78, 74, 74);
+    font: 24px Georgia, 'Times New Roman', Times, serif;
+}
+
+.bloc {
+    border-style: solid;
+    position: relative;
+}
+
+.button1 {
+    border-style: hidden;
+    border-radius: 10px;
+    background: rgb(153, 18, 63);
+    /* padding: auto;  */
+    margin: 0 auto;
+    width: 200px;
+    height: 36px; 
+    color: white;
+    margin: 2em;
+}
+
+.button2 {
+        border-style: hidden;
+        border-radius: 10px;
+        background: rgb(153, 18, 63);
+        /* padding: auto;  */
+        margin: 0 auto;
+        width: 200px;
+        height: 40px; 
+        color: white;
+        margin: 2em;
+}
+
+.buttonRestart {
+    border-style: hidden;
+    border-radius: 10px;
+    background: rgb(153, 18, 63);
+    /* padding: auto;  */
+    margin: 0 auto;
+    width: 300px;
+    height: 40px; 
+    color: white;
+    margin: 4em 8em;
+}

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgba(175, 9, 9, 0.3);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+}
+.content {
+    margin: 10px auto;
+    width: 50%;
+
+}
+input[type="text"] {
+    background-color:rgba(168, 73, 73, 0.671);
+    border: 1px rgba(255,0,0,0.3) solid;
+    border-radius: 5px;
+    color: white;
+    max-width: 47%;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+input[type="text"]:hover, button:hover {
+    background-color:rgba(175, 9, 9, 0.3);
+    color: whitesmoke;
+}
+.buton, .input {
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+.rez {
+    width: 96%; 
+    margin: 10px 0;
+    padding: 10px;
+    height: 40px;
+}
+::placeholder {
+    color: rgb(240, 240, 252);
+    font-size: 0.9em;
+    text-align: center;
+    font-style: italic;
+}
+:focus {outline: none;}
+button {
+    background-color:rgba(155, 142, 142, 0.712);
+    border: 1px rgba(155, 142, 142, 0.712) solid;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 47%;
+    margin: 0;
+    padding: 15px;
+}

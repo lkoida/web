@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Joc</title>
+        <link rel="stylesheet" type="text/css" href="../css/style_11.css">   
+        <link rel="stylesheet" type="text/css" href="../css/game.css">  
+</head>
+<body>
+<header>
+        <h1>Joc</h1>            
+</header>
+                <nav>
+                    <a href="../index_12.html">Acasa</a>
+                    <a href="../pagini/curiozitati-copy.html">Curiozitati</a>
+                    <a href="../pagini/adresa.html">Adresa</a>
+                    <a href="https://www.facebook.com/jenea.ceban">Profil Facebook</a>
+                    <a href="../pagini/formular-copy.html" target="_blank">Completeaza formular</a>
+                    <a href="../pagini/drapelu.html" target="_blank">Drapelu Moldovei</a>
+                </nav>                    
+<section>
+    <div class="content">
+            <p class="text">Incearca sa ghicesti nr de la 1 la 77 la care m-am gandit...</br>
+                Bara de mai jos te poate ajuta</p>
+            <div class="bloc">
+                <input class="button1" type="text" id="txt"/>
+                <button class="button2" onclick="introduNumar();">Verifica</button>
+            <p id="rez2"></p>
+            <input type="range" id="nr" min="1" max="77" class="myRange" oninput="prindeNumar();"/>
+            <p id="gen"></p>
+            <p id="rez1"></p>
+            <div class="bloc">
+                <button class="buttonRestart" onclick="restart();">Reia jocul!</button>
+            </div>
+            </div>
+        </div>
+</section>
+<footer>
+    <h4 id="demo" align="center"></h4>
+    <script>
+    document.getElementById("demo").innerHTML="&copy Knowledges create your future!"
+    </script>
+</footer>
+<script src="../js/game.js"></script> 
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/stil28.css" / > -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+<div class = "container">
+    <h1>Insert value, then select the operation...</h1>
+    <div class="buton">
+        <button onclick="operationUser.delValues();">Delete values</button>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="value 1" oninput="operationUser.validateNmbr();" id="val1" />
+        <input type="text" placeholder="value 2" oninput="operationUser.validateNmbr();" id="val2" />
+    </div>
+    <div class="rez">
+        <input type="text" id="rez" placeholder="result" readonly />
+    </div>
+    <div class="buton">
+        <button onclick="operationUser.getSumm();">Summing</button>
+        <button onclick="operationUser.getProd();">Multiplying</button>
+    </div>
+    <div class="buton">
+        <button onclick="operationUser.getDiff();">Difference</button>
+        <button onclick="operationUser.getDiv();">Division</button>
+    </div>
+    <div id="info"></div>
+	
+	
+	<div class="row">
+	<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+	</div>
+	
+	
+	
+</div>
+<script src="js/script28.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
