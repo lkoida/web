@@ -13,8 +13,8 @@
     <button onclick="operationUser.delValues();">Delete values</button>
   </div>
   <div class="input">
-    <input type="text" placeholder="value 1" oninput="operationUser.validateNumber();" id="val1"/>
-    <input type="text" placeholder="value 2" oninput="operationUser.validateNumber();" id="val2"/>
+    <label>Left operand <input type="text" placeholder="value 1" onchange="operationUser.validateNumber(this);" id="val1"/></label>
+    <label>Right operand<input type="text" placeholder="value 2" oninput="operationUser.validateNumber(this);" id="val2"/></label>
   </div>
   <div class="rez">
     <input type="text" id="rez" placeholder="result" readonly/>

@@ -14,15 +14,19 @@ function Operation (leftOperand, rightOperandHolder, result) {
   this.displayRez = function () {
     this.result.value = this.rez
   }
-  this.validateNumber = function () {
-    const pattern = new RegExp('^[0-9]{0,5}[\.]?[0-9]{0,5}$')
-    if (!(pattern.test(this.leftOperand.value))) {
-      this.leftOperand.value = this.leftOperand.value.substr(0, this.leftOperand.value.length - 1)
-    }
-    if (!(pattern.test(this.rightOperand.value))) {
-      this.rightOperand.value = this.rightOperand.value.substr(0, this.rightOperand.value.length - 1)
+  this.validateNumber = function (operand) {
+    const pattern = new RegExp('\\d+\.?\\d+', 'g')
+    if (!pattern.test(operand.value)) {
+      operand.value = null
     }
   }
+
+  this.calculateResult = function (operation) {
+    this.initVars()
+    this.rez = (('' + this.leftOperand.value === '') || ('' + this.rightOperand.value === '')) ? 'insert numbers' : this.value1 + this.value2
+    this.displayRez()
+  }
+
   this.getSum = function () {
     this.initVars()
     this.rez = (('' + this.leftOperand.value === '') || ('' + this.rightOperand.value === '')) ? 'insert numbers' : this.value1 + this.value2
