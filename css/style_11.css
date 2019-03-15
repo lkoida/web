@@ -91,6 +91,7 @@ footer {
   background-color: #eeecec;
   padding: 16px;
   text-align: center;
+  position: bottom;
 }
 
 .form{
