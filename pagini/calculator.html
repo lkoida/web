@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <title>Calculator</title>
-        <link rel="stylesheet" type="txt/css" href="../css/calculator.css">
-    </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Calculator</title>
+  <link rel="stylesheet" type="txt/css" href="../css/calculator.css">
+</head>
 <body>
-    <div class="container">
-        <h1>Insert value, then select the operation...</h1>
-        <div class="buton">
-            <button onclick="operationUser.delValues();">Delete values</button>
-        </div>
-        <div class="input">
-            <input type="text" placeholder="value 1" oninput="operationUser.validateNmbr();" id="val1" />
-            <input type="text" placeholder="value 2" oninput="operationUser.validateNmbr();" id="val2" />
-        </div>
-        <div class="rez">
-            <input type="text" id="rez" placeholder="result" readonly />
-        </div>
-        <div class="buton">
-                <button onclick="operationUser.getSumm();">Summing</button>
-                <button onclick="operationUser.getProd();">Multiplying</button>
-        </div>
-        <div class="buton">
-                <button onclick="operationUser.getDiff();">difference</button>
-                <button onclick="operationUser.getDiv();">Division</button>
-        </div>
-        <div id="info"></div>
-    </div>
+<div class="container">
+  <h1>Insert value, then select the operation...</h1>
+  <div class="buton">
+    <button onclick="operationUser.delValues();">Delete values</button>
+  </div>
+  <div class="input">
+    <label>Left operand <input type="text" placeholder="value 1" onchange="operationUser.validateNumber(this);" id="val1"/></label>
+    <label>Right operand<input type="text" placeholder="value 2" oninput="operationUser.validateNumber(this);" id="val2"/></label>
+  </div>
+  <div class="rez">
+    <input type="text" id="rez" placeholder="result" readonly/>
+  </div>
+  <div class="buton">
+    <button onclick="operationUser.getSum();">Summing</button>
+    <button onclick="operationUser.getProd();">Multiplying</button>
+  </div>
+  <div class="buton">
+    <button onclick="operationUser.getDiff();">difference</button>
+    <button onclick="operationUser.getDiv();">Division</button>
+  </div>
+  <div id="info"></div>
+</div>
 <script src="../js/calculator.js"></script>
 </body>
 </html>
